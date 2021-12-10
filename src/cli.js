@@ -1,12 +1,12 @@
 'use strict';
 
-const nibbler = require('./nibbler');
-const fmt = require('./config/formatters');
-const chalk = require('chalk');
-const inquirer = require('inquirer');
-const { fix } = require('eslint-filtered-fix');
-const options = require('./config/options');
-const { version } = require('../package.json');
+import nibbler from './nibbler';
+import * as fmt from './config/formatters';
+import chalk from 'chalk';
+import inquirer from 'inquirer';
+import { fix } from 'eslint-filtered-fix';
+import options from './config/options';
+import { version } from '../package.json';
 
 const cli = {
 
@@ -147,7 +147,7 @@ const cli = {
         inquirer.prompt([{
           name    : 'rule',
           type    : isMulti ? 'checkbox' : 'list',
-          message : isMulti ? 'Which rule(s) would you like to view?' : 'Which rule would you like to view?',
+          message : isMulti ? 'Which rule(s) would you like to fix?' : 'Which rule would you like to fix?',
           choices : results,
           pageSize: results.length
         },

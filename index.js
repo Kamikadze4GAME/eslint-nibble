@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-module.exports = require('./src/main');
+module.exports = require('./lib/main');

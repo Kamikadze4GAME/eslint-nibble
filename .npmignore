@@ -2,3 +2,4 @@ tests
 test.js
 .gitignore
 *.sublime*
+src/

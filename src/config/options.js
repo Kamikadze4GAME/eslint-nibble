@@ -8,14 +8,14 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-const optionator = require('optionator');
+import optionator from 'optionator';
 
 //------------------------------------------------------------------------------
 // Initialization and Public Interface
 //------------------------------------------------------------------------------
 
 
-module.exports = optionator({
+export default optionator({
   prepend: 'usage: eslint-nibble [file.js] [dir]',
   options: [{
     heading: 'Options'
